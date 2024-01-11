@@ -1,5 +1,9 @@
 # Dynamic Form Generation app
 
+To start a project: npm start
+Here is the deployment link: https://dynamic-form-generator-deepak.netlify.app/
+node version: 18
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
