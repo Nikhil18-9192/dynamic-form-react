@@ -1,0 +1,170 @@
+.app_container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .top_container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  }
+
+  
+  
+}
+
+
+.form_generator{
+  position: relative;
+  width: 600px;
+  max-height: 600px;
+  min-height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+    &::-webkit-scrollbar { 
+      width: 8px; 
+  } 
+  &::-webkit-scrollbar-thumb { 
+    background: #888; 
+} 
+
+&::-webkit-scrollbar-thumb:hover { 
+    background: #555; 
+} 
+
+&::-webkit-scrollbar-button { 
+    display: none; 
+} 
+  .btn-wrapper{
+    position: relative;
+    margin-top: 24px;
+    display: flex;
+    bottom: 16px;
+    gap: 16px;
+    .add_field_btn{
+      border: 1px solid #ccc;
+    background: #fff;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 115px;
+    color: #ff8f00;
+    cursor: pointer;
+    }
+
+  }
+}
+
+.form_display{
+  position: relative;
+  width: 600px;
+  min-height: 600px;
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  form{
+    height: 100%;
+  }
+}
+
+.form_field{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  .delete_icon{
+    color: red;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+ .options, label{
+    font-size: 14px;
+    font-weight: 500;
+    input{
+      outline: none;
+      border: 1px solid #ccc;
+      height: 16px;
+      padding: 4px;
+      margin-left: 14px;
+    }
+    select{
+      outline: none;
+      border: 1px solid #ccc;
+      margin-left: 14px;
+      // height: 16px;
+      // padding: 4px;
+    }
+  }
+ 
+}
+
+.submit_btn{
+  width: 115px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+
+.input_group{
+  margin-bottom: 14px;
+  label{
+    font-size: 14px;
+    font-weight: 500;
+
+  }
+  input{
+    outline: none;
+    border: 1px solid #ccc;
+    height: 16px;
+    padding: 4px;
+  }
+  textarea{
+    width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; 
+  font-family: 'Arial', sans-serif; 
+  font-size: 14px;
+  outline: none;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none; 
+    background: #fff; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 14px; 
+    outline: none;
+    &:focus{
+      border-color: #007bff; 
+  outline: none;
+    }
+  }
+  input[type="checkbox"] {
+    margin-right: 5px; 
+  }
+}
